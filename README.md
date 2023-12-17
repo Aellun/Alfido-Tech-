@@ -14,7 +14,7 @@ in python programming language
     manage task
 
 ==========================================
-##Calculator
+## Calculator
     this is a simple calculator that
     perform simple arithmatic functions
 
