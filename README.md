@@ -12,10 +12,11 @@ in python programming language
     this is a do list applications
     allow user to add, delete and 
     manage task
+
 ==========================================
 ##Calculator
     this is a simple calculator that
-perform simple arithmatic functions
+    perform simple arithmatic functions
 
 =========================================
 
