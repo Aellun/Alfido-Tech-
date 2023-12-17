@@ -21,11 +21,11 @@ in python programming language
 =========================================
 
 ## Password Generator
-    this a simple password generato.
-    the user can generate random passwords
-    save those passwords and use the later
+    this a simple password generator.
+    the user can generate random passwords,
+    save those passwords and use them later
     in whatever application they wuishes 
-    to use it
+    to use the generated passwords
 
 
 
