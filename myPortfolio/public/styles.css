@@ -1,0 +1,185 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #cfcccc;
+    font-family: 'Arial', sans-serif;
+    
+    p{
+        margin-bottom: 5px;
+        line-height: 1.5;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+/* Navigation Bar styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    margin: 0 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main Container styles */
+@media screen and (min-width: 700px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        margin: 80px auto 17px; /* Remove the top margin */
+        max-width: 1050px;
+        
+    }
+
+    /* Sidebar styles */
+    /* Wrapper for fixed border */
+    .sidebar-wrapper {
+        border-radius: 10px;
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        top: 37px; /* Adjusted the top position */
+        margin-bottom: 60px;
+        z-index: 1; /* Ensure the sidebar is behind the content */
+    }
+
+    /* Actual Sidebar Content */
+    .sidebar {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #3e3c3c;
+        border: 1px solid #91aa9d;
+        color: #ebedf0;
+        height: 100vh;
+        padding: 15px 10px;
+        position: fixed;
+        top: 50px;
+        width: 300px;
+        z-index: 5;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1); 
+        margin-right: 4px;
+        
+    }
+
+    /* Adjust main-container margin when scrollbar is at the top */
+    body:not(.scrolled) .main-container {
+        margin-top: 37px;
+    }
+
+    /* About Me and Skills Section styles */
+    #about-content,
+    #skills-content,
+    #projects-content,
+    #Resume-content {
+        margin: 37px 0 0 360px; /* Adjusted the margin */
+        padding: 20px;
+        
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: calc(100% - 360px); /* Adjusted the width */
+        margin-top: 10px;
+        color: rgb(16, 16, 16);
+    }
+    #about-content,
+    #skills-content,
+    #projects-content,
+    #Resume-content {
+        width: 60%; 
+    }
+
+    /* Skills Section styles */
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap; /* Allow the list items to wrap to the next line */
+    }
+
+    .skills-list li {
+        width: 50%; /* Set the width to 50% for a two-column layout */
+        box-sizing: border-box; /* Include padding and border in the total width */
+        margin-bottom: 15px;
+    }
+
+    .skill-name {
+        font-weight: bold;
+        color: #81D8D0;
+    }
+
+    .sub-note {
+        margin-top: 5px;
+        margin-left: 20px;
+        color: aliceblue; /* Adjust the color as needed */
+    }
+
+    /* Contact Section styles */
+    #contact {
+        margin: 37px 0 0 360px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        margin-bottom: 60px; 
+        width: 61.5%;
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+/* Footer styles */
+.copyright-footer {
+    background-color: transparent;
+    color: #2e2c2c;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
